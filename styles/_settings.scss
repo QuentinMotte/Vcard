@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+$font1: "bangers", cursive;
+$font2: "cabin", sans-serif;
+
+$color1: rgba(231, 225, 225, 0.938);
+$color2: rgb(128, 209, 241);
+$color3: rgb(211, 233, 236);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font2;
+}
+
+body {
+    color: $color1;
+    text-shadow: 0 0 20px rgba(245, 245, 245, 0.781);
+    min-height: 100vh;
+    background: rgb(26, 25, 25);
+}
+main {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 20px;
+    border: $color1 4px solid;
+    background: url(../img/bg-vcard.jpg) center/cover fixed;
+    display: flex;
+    max-height: 840px;
+    max-width: 1440px;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+}

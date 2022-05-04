@@ -1,0 +1,118 @@
+.middle-section {
+    display: flex;
+    @media screen and (max-width: 860px) {
+        flex-direction: column;
+    }
+    img {
+        z-index: 800;
+        margin-left: -50px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: inset 0 0 20px, 0 0 20px;
+        border: 5px solid $color1;
+        filter: grayscale(1%);
+        @media screen and (max-width: 860px) {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 60px;
+        @media screen and (max-width: 860px) {
+            margin-left: 10px;
+        }
+        .resume {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 3.5rem;
+                position: relative;
+                margin-bottom: 30px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    filter: brightness(120%);
+                    border: 1px solid $color1;
+                    box-shadow: 2px 2px 20px;
+                    width: 820px;
+                    transform: translateX(-205px) translateY(80px) scale(0);
+                    animation: h1anim 6s ease-in-out forwards;
+                    transform-origin: center;
+                }
+                @keyframes h1anim {
+                    100% {
+                        transform: translateX(-205px) translateY(80px) scaleX(1);
+                    }
+                }
+            }
+            h3 {
+                margin-bottom: 20px;
+                font-size: 1.5rem;
+                @media screen and (max-width: 860px) {
+                    margin-bottom: 10px;
+                }
+            }
+            p {
+                margin-right: 350px;
+                margin-bottom: 30px;
+                font-size: 1.2rem;
+                @media screen and (max-width: 1380px) {
+                    margin-right: 200px;
+                }
+                @media screen and (max-width: 1060px) {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .button {
+            z-index: 10;
+            @media screen and (max-width: 860px) {
+                margin-top: 40px;
+                margin-bottom: -30px;
+            }
+        }
+        button {
+            border: 1px solid $color1;
+            box-shadow: 0 0 20px $color1;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 15px 40px;
+            border-radius: 30px;
+
+            margin: 0 10px;
+            filter: none;
+            cursor: pointer;
+            transition: 0.1s;
+            @media screen and (max-width: 860px) {
+                margin-top: 15px;
+            }
+
+            &:nth-child(1) {
+                border: 1px solid grey;
+                background: grey;
+                color: $color1;
+                &:hover {
+                    border: 1px solid $color1;
+                    background: $color1;
+                    color: grey;
+                }
+            }
+            &:nth-child(2) {
+                border: 1px solid $color1;
+                background: $color1;
+                color: grey;
+                &:hover {
+                    border: 1px solid grey;
+                    background: grey;
+                    color: $color1;
+                }
+            }
+        }
+    }
+}

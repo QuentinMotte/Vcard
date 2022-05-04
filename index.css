@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "cabin", sans-serif;
+}
+
+body {
+  color: rgba(231, 225, 225, 0.938);
+  text-shadow: 0 0 20px rgba(245, 245, 245, 0.781);
+  min-height: 100vh;
+  background: #1a1919;
+}
+
+main {
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+  border: rgba(231, 225, 225, 0.938) 4px solid;
+  background: url(../img/bg-vcard.jpg) center/cover fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 840px;
+  max-width: 1440px;
+  margin: 50px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  height: 840px;
+  border-right: 4px solid rgba(231, 225, 225, 0.938);
+  -webkit-box-shadow: inset 0 0 20px, 0 0 20px;
+          box-shadow: inset 0 0 20px, 0 0 20px;
+  border-radius: 20px;
+  width: 45%;
+}
+
+.first-section::after {
+  content: url(../img/wave.png);
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: -483px;
+  top: 80px;
+  opacity: 0.3;
+  height: 300px;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  z-index: 0;
+  padding-top: 200px;
+}
+
+.first-section h2 {
+  margin: 40px;
+  font-family: "bangers", cursive;
+  font-size: 3rem;
+  padding: 10px;
+  padding-top: 15px;
+  width: 90px;
+  height: 90px;
+  border: 3px solid rgba(231, 225, 225, 0.938);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 20px, inset 1px 2px 20px;
+          box-shadow: 0 0 20px, inset 1px 2px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.first-section h2:hover {
+  -webkit-transform: rotate(360deg) scale(1.3);
+          transform: rotate(360deg) scale(1.3);
+}
+
+.first-section .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+
+.first-section .information .info {
+  margin: 5px 0;
+}
+
+.first-section .information h3 {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.first-section .information p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.first-section .information a {
+  color: rgba(231, 225, 225, 0.938);
+  margin: 10px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.first-section .information a:hover {
+  font-size: 1.3rem;
+  margin: 0px;
+}
+
+.first-section .hamburger {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.first-section .hamburger:hover span:nth-child(1) {
+  -webkit-transform: translateY(20px) rotate(45deg);
+          transform: translateY(20px) rotate(45deg);
+}
+
+.first-section .hamburger:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+.first-section .hamburger:hover span:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+
+.first-section .hamburger span {
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+  width: 60px;
+  height: 10px;
+  border-radius: 3px;
+  background: rgba(231, 225, 225, 0.938);
+  display: block;
+  margin-top: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.middle-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.middle-section img {
+  z-index: 800;
+  margin-left: -50px;
+  height: 350px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 20px, 0 0 20px;
+          box-shadow: inset 0 0 20px, 0 0 20px;
+  border: 5px solid rgba(231, 225, 225, 0.938);
+  -webkit-filter: grayscale(1%);
+          filter: grayscale(1%);
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+  }
+}
+
+.middle-section .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section .about {
+    margin-left: 10px;
+  }
+}
+
+.middle-section .about .resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.middle-section .about .resume h1 {
+  font-size: 3.5rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.middle-section .about .resume h1::after {
+  content: "";
+  position: absolute;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  border: 1px solid rgba(231, 225, 225, 0.938);
+  -webkit-box-shadow: 2px 2px 20px;
+          box-shadow: 2px 2px 20px;
+  width: 820px;
+  -webkit-transform: translateX(-205px) translateY(80px) scale(0);
+          transform: translateX(-205px) translateY(80px) scale(0);
+  -webkit-animation: h1anim 6s ease-in-out forwards;
+          animation: h1anim 6s ease-in-out forwards;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes h1anim {
+  100% {
+    -webkit-transform: translateX(-205px) translateY(80px) scaleX(1);
+            transform: translateX(-205px) translateY(80px) scaleX(1);
+  }
+}
+
+@keyframes h1anim {
+  100% {
+    -webkit-transform: translateX(-205px) translateY(80px) scaleX(1);
+            transform: translateX(-205px) translateY(80px) scaleX(1);
+  }
+}
+
+.middle-section .about .resume h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section .about .resume h3 {
+    margin-bottom: 10px;
+  }
+}
+
+.middle-section .about .resume p {
+  margin-right: 350px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1380px) {
+  .middle-section .about .resume p {
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .middle-section .about .resume p {
+    margin-right: 20px;
+  }
+}
+
+.middle-section .about .button {
+  z-index: 10;
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section .about .button {
+    margin-top: 40px;
+    margin-bottom: -30px;
+  }
+}
+
+.middle-section .about button {
+  border: 1px solid rgba(231, 225, 225, 0.938);
+  -webkit-box-shadow: 0 0 20px rgba(231, 225, 225, 0.938);
+          box-shadow: 0 0 20px rgba(231, 225, 225, 0.938);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 30px;
+  margin: 0 10px;
+  -webkit-filter: none;
+          filter: none;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+@media screen and (max-width: 860px) {
+  .middle-section .about button {
+    margin-top: 15px;
+  }
+}
+
+.middle-section .about button:nth-child(1) {
+  border: 1px solid grey;
+  background: grey;
+  color: rgba(231, 225, 225, 0.938);
+}
+
+.middle-section .about button:nth-child(1):hover {
+  border: 1px solid rgba(231, 225, 225, 0.938);
+  background: rgba(231, 225, 225, 0.938);
+  color: grey;
+}
+
+.middle-section .about button:nth-child(2) {
+  border: 1px solid rgba(231, 225, 225, 0.938);
+  background: rgba(231, 225, 225, 0.938);
+  color: grey;
+}
+
+.middle-section .about button:nth-child(2):hover {
+  border: 1px solid grey;
+  background: grey;
+  color: rgba(231, 225, 225, 0.938);
+}
+/*# sourceMappingURL=index.css.map */
