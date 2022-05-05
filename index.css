@@ -33,6 +33,42 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+}
+
+main .hamburger {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+main .hamburger:hover span:nth-child(1) {
+  -webkit-transform: translateY(20px) rotate(45deg);
+          transform: translateY(20px) rotate(45deg);
+}
+
+main .hamburger:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+main .hamburger:hover span:nth-child(3) {
+  -webkit-transform: translateY(-7px) rotate(-45deg);
+          transform: translateY(-7px) rotate(-45deg);
+}
+
+main .hamburger span {
+  -webkit-box-shadow: 0 0 20px;
+          box-shadow: 0 0 20px;
+  width: 60px;
+  height: 10px;
+  border-radius: 3px;
+  background: rgba(231, 225, 225, 0.938);
+  display: block;
+  margin-top: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .first-section {
@@ -82,6 +118,12 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 2;
+}
+
+@media screen and (max-width: 860px) {
+  .first-section h2 {
+    margin-left: 10px;
+  }
 }
 
 .first-section h2:hover {
@@ -135,46 +177,17 @@ main {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 400px) {
+  .first-section .information a {
+    margin: 5px;
+  }
+}
+
 .first-section .information a:hover {
   font-size: 1.3rem;
   margin: 0px;
   -webkit-filter: brightness(200%);
           filter: brightness(200%);
-}
-
-.first-section .hamburger {
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.first-section .hamburger:hover span:nth-child(1) {
-  -webkit-transform: translateY(20px) rotate(45deg);
-          transform: translateY(20px) rotate(45deg);
-}
-
-.first-section .hamburger:hover span:nth-child(2) {
-  opacity: 0;
-}
-
-.first-section .hamburger:hover span:nth-child(3) {
-  -webkit-transform: translateY(-7px) rotate(-45deg);
-          transform: translateY(-7px) rotate(-45deg);
-}
-
-.first-section .hamburger span {
-  -webkit-box-shadow: 0 0 20px;
-          box-shadow: 0 0 20px;
-  width: 60px;
-  height: 10px;
-  border-radius: 3px;
-  background: rgba(231, 225, 225, 0.938);
-  display: block;
-  margin-top: 4px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
 }
 
 .middle-section {

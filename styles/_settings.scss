@@ -32,4 +32,38 @@ main {
     margin: 50px auto;
     align-items: center;
     justify-content: center;
+    position: relative;
+    .hamburger {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        cursor: pointer;
+        z-index: 4;
+        &:hover {
+            span {
+                // position: absolute;
+
+                &:nth-child(1) {
+                    transform: translateY(20px) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: translateY(-7px) rotate(-45deg);
+                }
+            }
+        }
+        span {
+            box-shadow: 0 0 20px;
+            width: 60px;
+            height: 10px;
+            border-radius: 3px;
+            background: $color1;
+            display: block;
+            margin-top: 4px;
+            transition: 0.3s ease;
+            // filter: blur(1px);
+        }
+    }
 }
