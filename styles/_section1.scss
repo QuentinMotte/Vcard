@@ -9,7 +9,7 @@
     width: 45%;
 
     &::after {
-        content: url(../img/wave.png);
+        content: url(./img/wave.png);
         position: absolute;
         transform: rotate(90deg);
         left: -483px;

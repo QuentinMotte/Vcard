@@ -20,7 +20,7 @@ main {
   -webkit-box-shadow: 0 0 20px;
           box-shadow: 0 0 20px;
   border: rgba(231, 225, 225, 0.938) 4px solid;
-  background: url(../img/bg-vcard.jpg) center/cover fixed;
+  background: url(./img/bg-vcard.jpg) center/cover fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ main .hamburger span {
 }
 
 .first-section::after {
-  content: url(../img/wave.png);
+  content: url(./img/wave.png);
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
